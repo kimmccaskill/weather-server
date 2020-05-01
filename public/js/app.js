@@ -5,7 +5,7 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 const getWeather = (address) => {
-  fetch(`http://localhost:3000/weather?address=${address}`)
+  fetch(`/weather?address=${address}`)
     .then(res => res.json())
     .then(data => {
       if (data.error) {
